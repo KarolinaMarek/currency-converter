@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <header class="header">Kalkulator walut</header>
+
+    <form class="formChoice">
+        <div class="formChoice__container">
+            <label class="formChoice__label" for="choice1">
+                <input class="formChoice__input js-formChoice__input--pln" type="radio" name="choice" id="choice1"
+                    checked>Chcę przeliczyć PLN na obcą walutę
+            </label>
+        </div>
+        <div class="formChoice__container">
+            <label class="formChoice__label" for="choice2">
+                <input class="formChoice__input  js-formChoice__input--otherCurrency" type="radio" name="choice"
+                    id="choice2">Chcę przeliczyć obcą walutę na PLN
+            </label>
+        </div>
+    </form>
+
+    <form class="form js-form--pln">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">
+                Przelicz PLN na obcą walutę
+            </legend>
+            <label class="form__label">Chcę przeliczyć*
+                <input class="form__input js-form__input--plnAmount" type="number" placeholder="Kwota w PLN" required>
+            </label>
+            <label class="form__label">na
+                <select class="form__select js-form__select--pln" name="currency">
+                    <option class="form__option js-form__option--euro" value="euro">EURO</option>
+                    <option class="form__option js-form__option--usd" value="usd">USD</option>
+                    <option class="form__option js-form__option--gbp" value="gbp">GBP</option>
+                    <option class="form__option js-form__option--chf" value="chf">CHF</option>
+                </select>
+            </label>
+            <p class="form__information">* - pole wymagane </p>
+        </fieldset>
+        <button class="form__button js-form__button-pln">Przelicz</button>
+        <p class="form__result">Kwota w <span class="form__currency js-form__currency--pln"></span>: <span
+                class="form__amountFinal js-form__amountFinal--pln"></span></p>
+    </form>
+
+    <form class="form form--displayNone js-form--otherCurrency">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">
+                Przelicz obcą walutę na PLN
+            </legend>
+            <label class="form__label">Chcę przeliczyć*
+                <input class="form__input js-form__input--otherCurrencyAmount" type="number" placeholder="Kwota"
+                    required>
+            </label>
+            <label class="form__label">w
+                <select class="form__select js-form__select--otherCurrency">
+                    <option class="form__option js-form__option--euro2" value="euro">EURO</option>
+                    <option class="form__option js-form__option--usd2" value="usd">USD</option>
+                    <option class="form__option js-form__option--gbp2" value="gbp">GBP</option>
+                    <option class="form__option js-form__option--chf2" value="chf">CHF</option>
+                </select>
+            </label>
+            <p class="form__information">* - pole wymagane </p>
+        </fieldset>
+        <button class="form__button">Przelicz</button>
+        <p class="form__result">Kwota w <span class="form__currencyAmount">PLN</span>: <span
+                class="form__amountFinal js-form__amountFinal--otherCurrency"></span></p>
+    </form>
+
+    <aside class="currencyRate">
+        <h2 class="currencyRate__header">kursy walut</h2>
+        <p class="currencyRate__item">EURO: <span class="currencyRate__value js-currencyRate__value--euro"></span></p>
+        <p class="currencyRate__item">USD: <span class="currencyRate__value js-currencyRate__value--usd"></span></p>
+        <p class="currencyRate__item">GBP: <span class="currencyRate__value js-currencyRate__value--gbp"></span></p>
+        <p class="currencyRate__item">CHF: <span class="currencyRate__value js-currencyRate__value--chf"></span></p>
+    </aside>
+
+</body>
+
+</html>
