@@ -14,4 +14,8 @@ https://karolinamarek.github.io/currency-converter/
 6. Press the "Przelicz" (“Convert”) button
 7. The result will be displayed below the button
 
+### Option 1
+![Option1](./image/Screenshot_1.png)
+### Option 2
+![Option2](./image/Screenshot_2.png)
 
