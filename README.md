@@ -1,5 +1,5 @@
 # Simple currency calculator 
-![](./image/SimpleCurrencyCalculator.png)
+![Logo](./image/SimpleCurrencyCalculator.png)
 ## Description 
 The simple currency calculator is the assignment from the course “Frontend Developer bottom-up ” from YouCode. You can convert an amount in PLN to USD, EURO, GBP, CHF, or the other way around. The exchange rates are a random generation and it is a temporary solution. In the future, it will be changed to downloading from API.
 ## Link
@@ -20,3 +20,7 @@ https://karolinamarek.github.io/currency-converter/
 ### Option 2
 ![Option2](./image/Screenshot_2.png)
 
+## Used technologies
+- HTML
+- CSS
+- JavaScript 
