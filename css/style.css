@@ -8,6 +8,8 @@ html {
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    background-image: url("../image/Background.png");
 }
 
 .header {
