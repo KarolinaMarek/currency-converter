@@ -10,6 +10,9 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
     background-image: url("../image/Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
